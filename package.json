@@ -1,0 +1,32 @@
+{
+  "name": "react-native-logger",
+  "version": "0.3.2",
+  "description": "fast and simple logger for iOS and Android",
+  "main": "libs/logger.js",
+  "bin": "libs/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alinz/react-native-logger.git"
+  },
+  "dependencies": {
+    "ws": "1.0.1"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "logger"
+  ],
+  "author": {
+    "name": "Ali Najafizadeh",
+    "email": "a.najafizadeh@gmail.com",
+    "url": "https://github.com/alinz"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alinz/react-native-logger/issues"
+  },
+  "homepage": "https://github.com/alinz/react-native-logger"
+}
