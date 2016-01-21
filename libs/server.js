@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var WebSocketServer = require('ws').Server
   , wss = new WebSocketServer({ port: 7654 });
 
