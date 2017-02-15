@@ -1,4 +1,8 @@
-const logger = (address = 'localhost', port = 7654, options = { retry: true, timeout: 5000 }) => {
+import { NativeModules } from 'react-native';
+
+const hostname = NativeModules.SourceCode.scriptURL.split('://')[1].split('/')[0].split(':')[0]
+
+const logger = (address = hostname, port = 7654, options = { retry: true, timeout: 5000 }) => {
   let numberRetry = 0;
   let queue = [];
   let conn;
