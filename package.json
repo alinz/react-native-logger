@@ -1,18 +1,14 @@
 {
   "name": "react-native-logger",
-  "version": "0.3.3",
+  "version": "1.0.0",
   "description": "fast and simple logger for iOS and Android",
-  "main": "libs/logger.js",
-  "bin": "libs/server.js",
+  "main": "logger.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/alinz/react-native-logger.git"
-  },
-  "dependencies": {
-    "ws": "1.0.1"
   },
   "keywords": [
     "react-component",
