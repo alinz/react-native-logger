@@ -2,7 +2,7 @@
 
 type groupLogFn = (...args: Array<any>) => void
 
-const isDebugEnabled = typeof __DEV__ !== 'undefined' && !!__DEV__
+var isDebugEnabled = global && typeof global.__DEV__ !== 'undefined' && !!global.__DEV__
 
 const noop = () => {}
 const displayLogs = (name: string, title: string, logs: Array<Array<any>>, show: boolean) => {
@@ -26,6 +26,7 @@ const displayLogs = (name: string, title: string, logs: Array<Array<any>>, show:
 let filters: Array<string> = []
 
 export const logger = {
+  enable: (value: boolean) => isDebugEnabled = value,
   setFilters: (...names: Array<string>): void => {
     filters = names
   },
